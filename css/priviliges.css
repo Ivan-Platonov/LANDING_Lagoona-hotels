@@ -1,0 +1,72 @@
+
+.main_priviliges {
+	margin-bottom: 46px;
+}
+
+.title-priviliges {
+	margin-bottom: 29px;
+}
+
+
+.main_priviliges_list {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.main_priviliges_box {
+	flex-basis: 23.5%;
+
+	height: 100%;
+}
+
+.main_priviliges_box:not(:nth-child(4n)) {
+	margin-right: 23px;
+}
+
+.main_priviliges_box:not(:nth-last-child(-n+3)) {
+	margin-bottom: 25px;
+}
+
+
+.main_privilides_item {
+	display: block;
+
+	height: 100%;
+	padding: 116px 41.8px 30px 45px;
+
+	border-radius: 15px;
+	background-color: white;
+	background-image: url(../img/privilige_01.png);
+	background-repeat: no-repeat;
+	background-position: 44px 44px;
+
+	line-height: 2;
+}
+
+.priviliges-02 {
+	background-image: url(../img/privilige_02.png);
+}
+
+.priviliges-03 {
+	background-image: url(../img/privilige_03.png);
+}
+
+.priviliges-04 {
+	background-image: url(../img/privilige_04.png);
+}
+
+.priviliges-05 {
+	background-image: url(../img/privilige_05.png);
+}
+
+.priviliges-06 {
+	background-image: url(../img/privilige_06.png);
+}
+
+.priviliges-07 {
+	background-image: url(../img/privilige_07.png);
+}
+
+.priviliges-08 {
+	background-image: url(../img/privilige_08.png);
+}

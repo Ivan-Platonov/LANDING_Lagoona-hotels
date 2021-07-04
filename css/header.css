@@ -1,0 +1,157 @@
+
+.header {
+  margin-bottom: 70px;
+	padding-top: 30px;
+}
+
+.logo-account {
+  display: flex;
+  align-items: center;
+	flex-wrap: nowrap;
+
+  margin-bottom: 30px;
+}
+
+.logo-img {
+  margin-right: 40px;
+
+  border-radius: 15px;
+}
+
+.logo-tel-box {
+	flex-grow: 1;
+}
+
+.logo-tel-link {
+  transition-duration: .5s;
+	transition-property: font-weight, color;
+
+  color: #666;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.logo-tel-link:hover {
+	color: #c93;
+
+  font-weight: 500;
+}
+
+.account_link {
+	padding: 2px 0 0 29px;
+
+	transition-duration: .5s;
+	transition-property: transform, color;
+
+	color: #c93;
+	background: url(../img/keyboard_tab.svg) no-repeat 0 center;
+
+  line-height: 20px;
+}
+
+.account_link:hover {
+	transform: scale(.95);
+}
+
+.header_navline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+	height: 70px;
+
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.header_nav_list {
+  display: flex;
+  align-items: center;
+
+  margin-right: 24px;
+  padding-top: 2px;
+	padding-left: 45px;
+}
+
+.header_nav_item {
+	margin-right: 2.8em;
+}
+
+.header_nav_item:last-child {
+  margin-right: 3.4em;
+}
+
+
+
+.header_nav_link {
+  display: block;
+
+	transition: color .3s ease-out;
+
+  color: #666;
+}
+
+.header_nav_link::after {
+  display: block;
+
+  width: 0%;
+  height: 2px;
+
+  content: "";
+  transition: width .3s ease-in-out;
+
+  background-color: #c93;
+}
+
+.header_nav_link:hover {
+	color: #c93;
+}
+
+.header_nav_link:hover:after {
+  width: 100%;
+}
+
+/* Remove horisontality jamping hover menu links 
+with hover font-weight more then regular */
+.header_nav_link::before {
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+
+  height: 0;
+
+  content: attr(title);
+
+  font-weight: 700;
+}
+
+.header_nav_list::after {
+  width: 1px;
+  height: 50px;
+
+  content: "";
+
+  background-color: #E1E1E1;
+}
+
+.header_navBtn {
+  padding: 13px 20px;
+
+  transition-duration: .5s;
+  transition-property: color, background-color, transform;
+
+  background-color: transparent;
+}
+
+.header_navBtn:last-child {
+  margin-right: 45px;
+}
+
+.header_navBtn:hover {
+  cursor: pointer;
+
+	color: white;
+	background-color: #c93;
+}

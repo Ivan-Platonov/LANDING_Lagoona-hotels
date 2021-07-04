@@ -1,0 +1,155 @@
+
+.main_offers {
+  margin-bottom: 70px;
+}
+
+.title-offers {
+	margin-bottom: 20px;
+}
+
+.specoffers {
+	display: flex;
+}
+
+.specoffers-small {
+	display: flex;
+	flex-basis: 50%;
+	flex-direction: column;
+
+	margin-right: 22px;
+}
+
+.specoffer-small {
+	flex-basis: 50%;
+
+	padding: 40px;
+
+	border-radius: 15px;
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.specoffer-small:not(:last-child) {
+	margin-bottom: 23px;
+}
+
+.specoffer-small:first-child {
+	background-image: url(../img/special_offer-small_gradient.jpg), 
+	url(../img/special_offer-small_01.jpg);
+}
+
+.specoffer-small:last-child {
+	background-image: url(../img/special_offer-small_gradient.jpg), 
+	url(../img/special_offer-small_02.jpg);
+}
+
+.specoffer-small_title {
+	max-width: 60%;
+	margin-bottom: 15px;
+
+	color: white;
+
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.specoffer-small_cost-more {
+	align-items: flex-end;
+}
+
+.specoffer-small_cost {
+	margin-bottom: 47px;
+
+	opacity: 50%;
+	color: white;
+
+	font-size: 20px;
+}
+
+.specoffer-small_more {
+	transition-duration: .5s;
+	transition-property: transform, color, filter;
+
+	color: #c93;
+}
+
+.specoffer-small_more:after {
+	content: "    ";
+	white-space: pre;
+
+	background: url(../img/more_yellow_icon.svg) no-repeat;
+	background-position: right;
+}
+
+.specoffer-small_more:hover {
+	transform: scale(1.1);
+
+	color: white;
+
+	filter: drop-shadow(0 0 5px orange);
+}
+
+
+.specoffers-big {
+	flex-basis: 50%;
+}
+
+
+.specoffer-big {
+	height: 100%;
+	padding: 40px;
+
+	border-radius: 15px;
+	background: url(../img/special_offer.jpg) -11px 0 no-repeat;
+  background-size: cover;
+}
+
+.specoffer-big_title {
+	max-width: 65%;
+	margin-bottom: 15px;
+	padding-top: 34.6%;
+
+	color: white;
+
+	font-size: 60px;
+	line-height: 60px;
+}
+
+.specoffer-big_cost-more {
+	align-items: flex-end;
+}
+
+.specoffer-big_cost {
+	margin-bottom: 47px;
+
+	letter-spacing: -.03em;
+
+	opacity: 50%;
+	color: white;
+
+	font-size: 30px;
+}
+
+.specoffer-big_more {
+	transition-duration: .5s;
+	transition-property: transform, color, filter;
+
+	color: #c93;
+}
+
+.specoffer-big_more:after {
+	content: "    ";
+	white-space: pre;
+
+	background: url(../img/more_yellow_icon.svg) no-repeat;
+	background-position: right;
+}
+
+.specoffer-big_more:hover {
+	transform: scale(1.1);
+
+	color: white;
+
+	filter: drop-shadow(0 0 5px orange);
+}
+

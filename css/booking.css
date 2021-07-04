@@ -1,0 +1,169 @@
+
+.main_booking {
+	margin-bottom: 71px;
+}
+
+.main_form {
+	padding: 40px;
+
+	border-radius: 15px; 
+	background-color: #E9E9E9;
+}
+
+.title-booking {
+	margin-bottom: 19px;
+	padding-left: 0;
+
+	color: black;
+
+	font-size: 40px;
+}
+
+.main_form_inputs-wrapper {
+	width: 99%;
+	height: 106px;
+	margin-bottom: 30px;
+	margin-left: 6px;
+	padding: 25px;
+	padding-top: 28px;
+
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+.main_form_inputs-list {
+	display: flex;
+}
+
+
+
+.main_form_input-item:not(:first-child) {
+  padding-left: 19px;	
+}
+
+.main_form_input-item {
+	padding-right: 11px;
+}
+
+.main_form_input-item legend {
+	display: block;
+
+	margin-bottom: 14px;
+	padding-top: 3px;
+
+	font-size: 12px;
+}
+
+.main_form_input-item:not(:last-child) {
+	border-right: solid 1px #E1E1E1;
+}
+
+.main_form_input-item:last-child {
+	padding-top: 5px;
+	padding-right: 16px;
+}
+
+.main_form_input-item:nth-child(3) {
+	padding-right: 0;
+}
+
+
+.main_form_input-item:first-child .main_form_input,
+.main_form_input-item:nth-child(2) .main_form_input {
+	width: 180px;
+}
+
+.main_form_input-item:nth-child(3) .main_form_input {
+	width: 126px;
+	height: 20px;
+	margin-right: 15px;
+}
+
+.main_form_input-item:nth-last-child(2) .main_form_input,
+.main_form_input-item:nth-last-child(3) .main_form_input {
+	width: 127px;
+
+	border-bottom: solid 1px #E1E1E1;
+}
+
+.main_form_input-item:nth-last-child(2) {
+	padding-right: 30px;
+}
+
+.main_form_input {
+	width: 95%;
+
+	border: none;
+}
+
+.main_form_input::placeholder {
+	color: #000;
+}
+
+.main_form_input:focus {
+	outline: none;
+}
+
+
+
+.main_form_input[type="text"]::-webkit-calendar-picker-indicator {
+	display: block;
+
+	opacity: 1;
+	color: rgba(0, 0, 0, 0);
+	background: url(..//img/List_picker.svg) center center no-repeat;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+	margin: 0;
+
+	cursor: pointer;
+
+	background-position-y: -2px;
+}
+
+input[type="date"]::before { 
+	content: attr(data-placeholder);
+}
+
+/* hide our custom/fake placeholder text when in focus to show the default
+ * 'mm/dd/yyyy' value and when valid to show the users' date of birth value.
+ */
+input[type="date"]:focus::before,
+input[type="date"]:valid::before { 
+	display: none;
+}
+
+input[type="date"]::-webkit-datetime-edit {
+	opacity: 0;
+}
+
+input[type="date"]:focus::-webkit-datetime-edit,
+input[type="date"]:valid::-webkit-datetime-edit {
+	opacity: 1;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	opacity: 1;
+}
+
+.main_form_btn {
+	display: block;
+
+	padding: 11px 32px;
+
+	cursor: pointer;
+	transition-duration: 1s;
+	transition-property: color, background-color, transform;
+
+	background-color: transparent;
+}
+
+.main_form_btn:hover {
+	color: white;
+	background-color: #c93;
+}
+
+

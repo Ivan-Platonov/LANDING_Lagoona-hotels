@@ -1,0 +1,49 @@
+.btn {
+	user-select: none;
+
+	color: #c93;
+	border: solid 1px #c93;
+	border-radius: 12px;
+}
+
+.btn:hover {
+	transform: scale(.95);
+}
+
+b, strong {
+	color: black;
+
+	font-size: 20px;
+}
+
+.main_title {
+  padding-left: 40px;
+
+	color: #333;
+
+	font-size: 40px;
+	font-weight: normal;
+}
+
+.main_about {
+	margin-bottom: 59px;
+}
+
+.title-about  {
+	margin-bottom: 10px;
+}
+
+.main_about_description {
+	max-width: 76%;
+
+	line-height: 2;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+
+	border: none;
+}
+
+

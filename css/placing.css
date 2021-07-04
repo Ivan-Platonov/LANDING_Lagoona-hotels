@@ -1,0 +1,177 @@
+
+.main_placing {
+	margin-bottom: 46px;
+}
+
+.title-placing {
+	margin-bottom: 30px;
+}
+
+
+.main_placing_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_placing_box {
+  flex-basis: 32%;
+
+	margin-bottom: 21px;
+}
+
+.main_placing_card {
+	height: 100%;
+
+  border-radius: 15px;
+	background-color: white;
+
+}
+
+.main_placing_box>article>img {
+	width: 100%;
+
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+
+
+
+.main_placing_box:not(:nth-child(3n)) {
+  margin-right: 23px;
+}
+
+.main_placing_item {
+  padding: 31px 0 44px 45px;
+
+	border-radius: 10px;
+}
+
+.main_placing_item_wrapper {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 15px;
+}
+
+
+.main_placing_item-cost {
+	display: inline-flex;
+	justify-content: start;
+
+	color: black;
+
+  font-size: 20px;
+	font-weight: 700;
+}
+
+.main_placing_item-cost:before {
+	height: 100%;
+	padding-top: 4px;
+
+	content: "от";
+
+	color: #9d9d9d;
+
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.main_placing_item-cost:after {
+	height: 100%;
+	padding-top: 4px;
+
+	content: "/ ночь";
+
+	color: #333;
+
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.main_placing_raiting {
+	width: 100px;
+	margin-right: 39px;
+	padding-top: 5px;
+}
+
+.main_placing_raiting_star {
+	width: 13px;
+	height: 13px;
+}
+
+.main_placing_raiting_star:not(:last-child) {
+	margin-right: 4px;
+}
+
+.raiting-8 .main_placing_raiting_star:last-child {
+	visibility: hidden;
+}
+
+.main_placing_name {
+	max-width: 90%;
+	margin-bottom: 16px;
+
+	color: #4e4e4e;
+}
+
+.main_placing_place {
+	max-width: 90%;
+	margin-bottom: 20px;
+
+	color: #999;
+}
+
+.main_placing_place-btn {
+	display: block;
+
+	width: 30%;
+	padding: 11px 19px;
+
+	transition-duration: 1s;
+	transition-property: color, background-color, transform;
+}
+
+.main_placing_place-btn:hover {
+	color: white;
+	background-color: #c93;
+}
+
+.main_all-var {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+
+	height: 100%;
+
+	border-radius: 15px;
+	background: url(../img/all_variants.jpg) no-repeat center / cover;
+}
+
+.main_all-var_link {
+	display: block;
+
+	margin-right: 52px;
+	padding-bottom: 36px;
+
+	transition-duration: .5s;
+	transition-property: filter, transform;
+
+	color: white;
+
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.main_all-var_link:after {
+	content: "    ";
+	white-space: pre;
+
+	background: url(../img/more_white_icon.svg) no-repeat;
+	background-position: right;
+}
+
+.main_all-var_link:hover {
+	transform: translateX(10px) scale(1.1);
+	
+}
