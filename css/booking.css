@@ -6,9 +6,8 @@
 .main_form {
 	padding: 40px;
 
-	border-radius: 15px; 
-	background-color: #E9E9E9;
-}
+	border-radius: 15px;  background-color: #E9E9E9;
+	}
 
 .title-booking {
 	margin-bottom: 19px;
@@ -20,6 +19,8 @@
 }
 
 .main_form_inputs-wrapper {
+	display: flex;
+
 	width: 99%;
 	height: 106px;
 	margin-bottom: 30px;
@@ -31,67 +32,59 @@
 	background-color: #fff;
 }
 
-.main_form_inputs-list {
-	display: flex;
+
+.main_form_input-field {
+	padding-right: 14px;
+
+	border-right: solid 1px #E1E1E1;
 }
 
-
-
-.main_form_input-item:not(:first-child) {
-  padding-left: 19px;	
+.main_form_input-field:not(:first-of-type) {
+	padding-left: 18px;
 }
 
-.main_form_input-item {
-	padding-right: 11px;
+.main_form_input-field[data-name="nights"] {
+	padding-right: 18px;
 }
 
-.main_form_input-item legend {
+.main_form_input-field[data-name="guests"] {
+	margin-right: 20px;
+	padding-right: 28px;
+}
+
+.main_form_input-field::before {
 	display: block;
 
-	margin-bottom: 14px;
-	padding-top: 3px;
+	margin-bottom: 15px;
 
 	font-size: 12px;
 }
 
-.main_form_input-item:not(:last-child) {
-	border-right: solid 1px #E1E1E1;
+.main_form_input-field[data-name="city"]::before {
+	content: "Город вылета";
 }
 
-.main_form_input-item:last-child {
-	padding-top: 5px;
-	padding-right: 16px;
+.main_form_input-field[data-name="countries"]::before {
+	content: "Страна";
 }
 
-.main_form_input-item:nth-child(3) {
-	padding-right: 0;
+.main_form_input-field[data-name="date"]::before {
+	content: "Дата прибытия";
+}
+
+.main_form_input-field[data-name="nights"]::before {
+	content: "Ночей";
+}
+
+.main_form_input-field[data-name="guests"]::before {
+	content: "Туристы";
 }
 
 
-.main_form_input-item:first-child .main_form_input,
-.main_form_input-item:nth-child(2) .main_form_input {
-	width: 180px;
-}
 
-.main_form_input-item:nth-child(3) .main_form_input {
-	width: 126px;
-	height: 20px;
-	margin-right: 15px;
-}
-
-.main_form_input-item:nth-last-child(2) .main_form_input,
-.main_form_input-item:nth-last-child(3) .main_form_input {
-	width: 127px;
-
-	border-bottom: solid 1px #E1E1E1;
-}
-
-.main_form_input-item:nth-last-child(2) {
-	padding-right: 30px;
-}
 
 .main_form_input {
-	width: 95%;
+	width: 11.1em;
 
 	border: none;
 }
@@ -104,6 +97,17 @@
 	outline: none;
 }
 
+
+.main_form_input-field[data-name="date"] .main_form_input {
+	width: 8em;
+}
+
+.main_form_input-field[data-name="nights"] .main_form_input,
+.main_form_input-field[data-name="guests"] .main_form_input {
+	width: 7.8em;
+
+	border-bottom: solid 1px #E1E1E1;
+}
 
 
 .main_form_input[type="text"]::-webkit-calendar-picker-indicator {
@@ -152,7 +156,8 @@ input::-webkit-outer-spin-button {
 .main_form_btn {
 	display: block;
 
-	padding: 11px 32px;
+	height: 44px;
+	padding: 0 30px;
 
 	cursor: pointer;
 	transition-duration: 1s;

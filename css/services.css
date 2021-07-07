@@ -26,18 +26,31 @@
 
 .main_services_item {
 	height: 100%;
+	padding-top: 35%;
 	padding-bottom: 36px;
 
 	border-radius: 15px;
 	background-color: white;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
-.main_service_img {
-	margin-bottom: 31px;
-
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
+.main_services_box:first-child .main_services_item {
+	background-image: url(../img/services_01.jpg);
 }
+
+.main_services_box:nth-child(2) .main_services_item {
+	background-image: url(../img/services_02.jpg);
+}
+
+.main_services_box:nth-child(3) .main_services_item {
+	background-image: url(../img/services_03.jpg);
+}
+
+.main_services_box:last-child .main_services_item {
+	background-image: url(../img/services_04.jpg);
+}
+
 
 .main_service_link {
 	display: block;
