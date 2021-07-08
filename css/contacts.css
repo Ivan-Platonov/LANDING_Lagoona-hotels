@@ -38,7 +38,7 @@
 .main_contacts_item-box {
 	display: flex;
 
-	margin-right: 40px;
+	width: 90%;
 	padding-bottom: 21px;
 
 	border-bottom: 1px solid silver;
@@ -95,7 +95,6 @@
 	display: block;
 
 	width: 214px;
-	margin-left: 1px;
 	padding: 25px 27px;
 
 	transition-duration: .5s;

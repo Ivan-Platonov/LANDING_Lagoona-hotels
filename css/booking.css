@@ -5,6 +5,7 @@
 
 .main_form {
 	padding: 40px;
+	padding-bottom: 70px;
 
 	border-radius: 15px;  background-color: #E9E9E9;
 	}
@@ -23,7 +24,6 @@
 
 	width: 99%;
 	height: 106px;
-	margin-bottom: 30px;
 	margin-left: 6px;
 	padding: 25px;
 	padding-top: 28px;
@@ -34,22 +34,19 @@
 
 
 .main_form_input-field {
-	padding-right: 14px;
+	margin-right: 18px;
+	width: 12em;
 
 	border-right: solid 1px #E1E1E1;
 }
 
-.main_form_input-field:not(:first-of-type) {
-	padding-left: 18px;
-}
 
-.main_form_input-field[data-name="nights"] {
-	padding-right: 18px;
+.main_form_input-field:nth-child(3),
+.main_form_input-field:nth-child(4) {
+	width: 9em;
 }
-
-.main_form_input-field[data-name="guests"] {
-	margin-right: 20px;
-	padding-right: 28px;
+.main_form_input-field:nth-child(5) {
+	width: 9.6em;
 }
 
 .main_form_input-field::before {
@@ -84,8 +81,6 @@
 
 
 .main_form_input {
-	width: 11.1em;
-
 	border: none;
 }
 
@@ -97,6 +92,9 @@
 	outline: none;
 }
 
+.main_form_input-field:nth-of-type(-n+2) .main_form_input {
+	width: 11.1em;
+}
 
 .main_form_input-field[data-name="date"] .main_form_input {
 	width: 8em;

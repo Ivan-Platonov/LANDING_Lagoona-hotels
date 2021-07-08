@@ -13,7 +13,7 @@
 	display: flex;
 	justify-content: space-between;
 
-	padding: 42px 40px 41px 52px;
+	padding: 42px 52px 41px 52px;
 
 	color: white;
 	background: url(../img/logo_footer.png) 80.8% bottom no-repeat;
@@ -22,7 +22,7 @@
 .footer_left-block {
 	flex-basis: 29%;
 
-	margin-right: 10%;
+	margin-right: 10.5%;
 
 	line-height: 2em;
 }
@@ -69,7 +69,6 @@
 }
 
 .footer_social {
-	margin-right: 12px;
 	padding-top: 8px;
 }
 

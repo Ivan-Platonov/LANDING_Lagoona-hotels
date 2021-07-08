@@ -1,7 +1,7 @@
 
 
 .main_services {
-	margin-bottom: 47px;
+	margin-bottom: 70px;
 }
 
 .title-services {
@@ -19,15 +19,16 @@
 
 .main_services_box {
   flex-basis: 49%;
+}
 
+.main_services_box:nth-child(-n+2) {
 	margin-bottom: 24px;
 }
 
 
 .main_services_item {
 	height: 100%;
-	padding-top: 35%;
-	padding-bottom: 36px;
+	padding: 35% 0 36px 45px;
 
 	border-radius: 15px;
 	background-color: white;
@@ -57,7 +58,6 @@
 
 	max-width: 90%;
 	margin-bottom: 5px;
-	padding-left: 45px;
 
 	transition-duration: .5s;
 	transition-property: transform, font-weight, color, filter;
@@ -87,7 +87,6 @@
 
 .main_service_description {
 	max-width: 77%;
-	padding-left: 45px;
 
 	font-size: 16px;
 	line-height: 2;
